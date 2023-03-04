@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <form name="register" method="post" action="../insertuser/">
+        {% csrf_token %}
+
+        <pre>
+                          <h1>School Admin</h1>
+                Student :<input type = "text" name = "tustudent" value = "" width="200"><br>
+                Tamil   :<input type = "text" name = "tutamil" value = "" width="200"><br>
+                Social  :<input type = "text" name = "tusocial" value = "" width="200"><br>
+                Maths   :<input type = "text" name = "tumaths" value = "" width="200"><br>
+                Science :<input type = "text" name = "tuscience" value = "" width="200"><br>
+                English :<input type = "text" name = "tuenglish" value = "" width="200"><br>
+                <input type = "submit" name = "reg" value = "Add marksheet" wisth = "300" height = "100">
+            </pre>
+      </form>
+    </center>
+  </body>
+</html>
